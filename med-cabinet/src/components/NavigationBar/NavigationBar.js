@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 // import Link from "@material-ui/core/Link";
 // import AppBar from "@material-ui/core/AppBar";
@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { deepOrange } from "@material-ui/core/colors";
 import Typography from "@material-ui/core/Typography";
 import SearchBox from "./SearchBox";
+import axios from 'axios'
 
 const useStyles = makeStyles(theme => ({
   root: {
