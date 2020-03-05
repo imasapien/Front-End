@@ -27,7 +27,8 @@ const Browse = props => {
 
   useEffect(() => {
     axios
-      .post(`https://med-cab-app.herokuapp.com/test`, `${user.desiredEffect}`)
+      // .post(`https://med-cab-app.herokuapp.com/test`, JSON.stringify("Apples"))
+      .post(`https://med-cab-app.herokuapp.com/test`, JSON.stringify(user.desiredEffect))
       .then(res => {
         console.log(res.data);
         setStrain(res.data);
